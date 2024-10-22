@@ -6,6 +6,11 @@ import { Suspense } from "react"
 import Table from '@/app/ui/invoices/table';
 import Pagination from "@/app/ui/invoices/pagination"
 import { fetchInvoicesPages } from "@/app/lib/data"
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Invoices | Acme Dashboard',
+};
 
 const page = async (
     { searchParams }: {

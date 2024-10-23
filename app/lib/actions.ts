@@ -26,6 +26,7 @@ export async function authenticate(
     formData: FormData,
 ) {
     try {
+        console.log(prevState);
         await signIn('credentials', formData);
     } catch (error) {
         if (error instanceof AuthError) {
@@ -67,6 +68,7 @@ export async function createInvoice(prevState: State, formData: FormData) {
         };
     }
 
+    console.log(prevState)
     const { customerId, amount, status } = validatedFields.data
     const amountInCents = amount * 100;
     const date = new Date().toISOString().split('T')[0];

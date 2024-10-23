@@ -1,5 +1,4 @@
 'use server';
-
 import { signIn } from '@/auth';
 import { sql } from '@vercel/postgres';
 import { AuthError } from 'next-auth';

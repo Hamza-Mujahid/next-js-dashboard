@@ -1,5 +1,5 @@
 import '@/app/ui/global.css'
-import { inter, raleway } from './ui/fonts';
+import { raleway } from './ui/fonts';
 
 import { Metadata } from 'next';
 
